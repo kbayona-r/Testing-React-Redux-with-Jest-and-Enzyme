@@ -1,16 +1,16 @@
 pipeline {
   agent {
-    docker { image 'maven:3.8.1-jdk-11' }
+    docker { image 'node:14' }
   }
   stages {
-    stage('Build') {
+    stage('Install') {
       steps {
-        sh 'mvn clean compile'
+        sh 'npm install'
       }
     }
-    stage('Testing') {
+    stage('Test') {
       steps {
-        sh 'mvn test'
+        sh 'npm test'
       }
     }
   }
