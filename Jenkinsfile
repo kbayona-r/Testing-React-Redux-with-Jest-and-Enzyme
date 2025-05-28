@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Identificación') {
             steps {
-                sh 'echo "CD ejecutado por: Karol (eim-alu-69005)"'
+                sh 'echo "CD ejecutado por: Karol (eim-alu-69005) - CAMBIO DE PRUEBA"'
             }
         }
 
